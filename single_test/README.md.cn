@@ -1,0 +1,22 @@
+1. 手动修改以下变量在文件single_diy_mtr.sh中
+    #####################
+    mysql_db="lizhiang"
+    mysql_ip="10.0.2.9"
+    mysql_port="3306"
+    mysql_user="root"
+    mysql_pass="abfiqwoLs7Z"
+    
+    ks_db="lizhiang"
+    ks_ip="127.0.0.1"
+    ks_port="9696"
+    ks_user="root"
+    ks_pass="abfiqwoLs7Z"
+    #####################
+
+2. 每次进行一次测试，进行下面操作，t1目录下面放测试文件，拷贝测试文件到t1目录下，然后执行./single_diy_mtr.sh脚本
+   rm t1/ 
+   cp $test .t1/ 
+   ./single_diy_mtr.sh
+
+3. mysql 和kingshard 不同的执行结果放置在r_issue 和 r_diff 目录下，mysql结果放在r_m, kingshard结果放在r_k下
+
